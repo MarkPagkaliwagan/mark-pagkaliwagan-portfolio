@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Pagkaliwagan's Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+        /* Color Theme */
+        :root {
+            --bg-color: #0a0f0d;
+            --text-color: #00ff7f;
+            --muted-color: #b3ffcc;
+            --section-bg: #111814;
+            --accent-color: #00b894;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        h1, h2, h3 {
+            color: var(--text-color);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--muted-color);
+        }
+
+        /* Header Section */
+        #hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: var(--section-bg);
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        #hero img {
+            border-radius: 50%;
+            width: 120px;
+            margin-top: 20px;
+            border: 2px solid var(--accent-color);
+        }
+
+        #hero h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+        }
+
+        #hero h3 {
+            color: var(--muted-color);
+            margin-bottom: 20px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Section Styles */
+        section {
+            margin: 30px 0;
+            background: var(--section-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        ul li span {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .contact-list a {
+            display: block;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: var(--section-bg);
+            color: var(--muted-color);
+            font-size: 0.9rem;
+        }
+
+        /* Dark Mode Toggle */
+        .dark-mode-toggle {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+        }
+
+        .dark-mode-toggle button {
+            background: var(--bg-color);
+            color: var(--text-color);
+            border: 1px solid var(--text-color);
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .dark-mode-toggle button:hover {
+            background: var(--text-color);
+            color: var(--bg-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <img src="profile-pic.jpg" alt="Mark Pagkaliwagan">
+        <h1>Mark Pagkaliwagan</h1>
+        <h3>20-year-old | 3rd-Year BSIT Student | Tech Enthusiast | Content Creator</h3>
+    </section>
+
+    <div class="container">
+        <!-- Connect Section -->
+        <section id="connect">
+            <h2>🌐 Connect with Me</h2>
+            <p>Let's connect on my social media platforms:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/MRKpgk" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/may0rr.rr" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@markedit.s" target="_blank">TikTok</a></li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>🎓 Education</h2>
+            <ul>
+                <li><span>Elementary:</span> Atisan Elementary School (2009 - 2015)</li>
+                <li><span>Junior High School:</span> Atisan Integrated School (2015 - 2019)</li>
+                <li><span>Senior High School:</span> San Pablo Colleges (2020 - 2022)</li>
+                <li><span>College:</span> San Pablo Colleges (2022 - Present)</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>📞 Contact</h2>
+            <ul class="contact-list">
+                <li><span>Phone:</span> 09561825203</li>
+                <li><span>Email:</span> <a href="mailto:info.markpagkaliwagan@gmail.com">info.markpagkaliwagan@gmail.com</a></li>
+                <li><span>Address:</span> San Pablo City, Laguna</li>
+                <li><span>Website:</span> <a href="http://www.reallygreatsite.com" target="_blank">www.reallygreatsite.com</a></li>
+            </ul>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="tech-stack">
+            <h2>💻 Tech Stack</h2>
+            <p>Familiar technologies and tools:</p>
+            <ul>
+                <li>C++, HTML5, .NET, MySQL, Node.js</li>
+                <li>Adobe Photoshop, Canva</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Mark Pagkaliwagan. All rights reserved.
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            const root = document.documentElement;
+            if (document.body.classList.contains("dark-mode")) {
+                root.style.setProperty('--bg-color', '#ffffff');
+                root.style.setProperty('--text-color', '#000000');
+                root.style.setProperty('--section-bg', '#f0f0f0');
+                root.style.setProperty('--accent-color', '#00b894');
+                root.style.setProperty('--muted-color', '#555555');
+            } else {
+                root.style.setProperty('--bg-color', '#0a0f0d');
+                root.style.setProperty('--text-color', '#00ff7f');
+                root.style.setProperty('--section-bg', '#111814');
+                root.style.setProperty('--accent-color', '#00b894');
+                root.style.setProperty('--muted-color', '#b3ffcc');
+            }
+        }
+    </script>
+</body>
+</html>
